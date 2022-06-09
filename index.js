@@ -17374,10 +17374,9 @@ Q\n";
 
 
 
-function downloadPDF(html,{
-    width = 170,
-    fName = "HTML2PDF.pdf"
-}) {
+function downloadPDF(html) {
+    let width = 170;       
+    let fName = "HTML2PDF.pdf";
     var doc = new PDF_CP();  //create PDF_CP object
     doc.fromHTML(html, // page element which you want to print as PDF
         15,
